@@ -1,6 +1,7 @@
-## Template project folder for React Projects
+# Template project folder for React Projects
 
-# Tools
+## Tools
 
 1- create-react-app
+
 2- sass
