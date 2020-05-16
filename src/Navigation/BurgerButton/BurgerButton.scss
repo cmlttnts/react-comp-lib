@@ -1,0 +1,18 @@
+@use "./burgerButtonVars" as burg;
+
+.topnav0-burgerButton {
+  width: 100%;
+  background-color: inherit;
+}
+
+.topnav0-burgerButton:focus {
+  background-color: greenyellow;
+}
+
+.topnav0-burgerButton:focus ~ .reldiv {
+  display: block;
+}
+
+.topnav0-burgerButton:focus ~ .reldiv > .absdiv {
+  position: absolute;
+}

@@ -1,0 +1,46 @@
+@use "./NavigationVars" as nav;
+//Global Navigation Components
+
+.topnav0 {
+  //Color and Fonts
+  background-color: nav.$bgc;
+  color: nav.$col;
+  font-size: nav.$f-size;
+  font-family: nav.$f-family;
+  //Display
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  //Diamensions
+
+  //Position
+
+  //Margin, Padding
+}
+
+//Specific Navigation Classes
+.topnav0-reldiv {
+  display: none;
+  width: 100%;
+  background-color: inherit;
+  position: relative;
+  text-align: center;
+}
+
+.topnav0-absdiv {
+  width: 100%;
+  background-color: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.topnav0-reldiv:hover,
+.topnav0-reldiv:focus {
+  display: block;
+}
+.topnav0-reldiv:hover > .absdiv {
+  position: absolute;
+}

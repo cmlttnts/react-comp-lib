@@ -1,0 +1,19 @@
+@use "./DropDownButtonVars";
+
+.topnav0-drop0-button {
+  display: inline-block;
+  width: 100%;
+  background-color: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  text-decoration: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.topnav0-drop0-button:focus ~ .reldiv {
+  display: block;
+}

@@ -1,0 +1,32 @@
+@use "./NavItemVars";
+
+.topnav0-item {
+  width: 100%;
+}
+
+.NavItem {
+  border: 2px solid green;
+  width: 100%;
+}
+
+.topnav0-drop0 {
+  background-color: inherit;
+  width: 100%;
+}
+
+.topnav0-drop0-reldiv {
+  background-color: inherit;
+  display: none;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.topnav0-drop0-reldiv:hover {
+  display: block;
+}
+
+.topnav0 .NavLink:hover,
+.topnav0 .DropDownButton:hover {
+  background-color: grey;
+}
