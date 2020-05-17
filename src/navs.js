@@ -42,7 +42,7 @@ const navs = [
     ],
   },
   {
-    uName: "nav1",
+    uName: "midnav0",
     items: [
       {
         type: "link",

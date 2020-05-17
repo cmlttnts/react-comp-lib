@@ -1,12 +1,11 @@
 import React from "react";
 import navs from "./navs";
-import Navigation from "./Navigation/Navigation";
+import Nav from "./Nav/Nav";
 function App(props) {
-  console.log(typeof navs[0]);
   return (
-    <div className="App">
+    <div className="App app0">
       <h1>React Library</h1>
-      <Navigation nav={navs[0]} />
+      {/* <Nav json={navs[0]} puName="app0" />
       <p>HELLOOOOOOOOOOOOOO</p>
       <p>HELLOOOOOOOOOOOOOO</p>
       <p>HELLOOOOOOOOOOOOOO</p>
@@ -16,7 +15,7 @@ function App(props) {
       <p>HELLOOOOOOOOOOOOOO</p>
       <p>HELLOOOOOOOOOOOOOO</p>
       <p>HELLOOOOOOOOOOOOOO</p>
-      <p>HELLOOOOOOOOOOOOOO</p>
+      <p>HELLOOOOOOOOOOOOOO</p> */}
     </div>
   );
 }
