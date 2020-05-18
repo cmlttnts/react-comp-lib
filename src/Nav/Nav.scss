@@ -1,2 +1,27 @@
 @use "./NavVars" as nav;
 //Global Navigation Components
+.Nav {
+  //Colors, Fonts, Borders
+
+  //Display
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  //Diamensions
+  //Position
+  //Margin, Padding
+}
+
+//Specific Navigations
+.app0-topnav0 {
+  //Colors, Fonts
+  background-color: nav.$bgc;
+  color: nav.$pri-col;
+  font-size: nav.$f-size;
+  font-family: nav.$f-family;
+  //Display
+  //Diamensions
+  //Position
+  //Margin, Padding
+}

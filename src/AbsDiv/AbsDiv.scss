@@ -1,1 +1,74 @@
 @use "./AbsDivVars";
+
+//Every absolute container should have this
+.AbsDiv {
+  //Colors, Fonts, Borders
+  background-color: inherit;
+  //Display
+  //Diamensions
+  width: 100%;
+  //Position
+  //Margin, Padding
+}
+
+//Top nav starts with flex-column
+.app0-topnav0-absdiv {
+  //Colors, Fonts, Borders
+  //Display
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  //Diamensions
+  //Position
+  //Margin, Padding
+}
+
+.app0-topnav0-but0_0-absdiv {
+  //Colors, Fonts, Borders
+
+  //Display
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  //Diamensions
+  //Position
+  //Margin, Padding
+}
+
+.ActiveAbsDiv {
+  //Colors, Fonts, Borders
+  //Display
+  //Diamensions
+  //Position
+  //Margin, Padding
+}
+
+@media only screen and (min-width: 600px) {
+  .AbsDiv {
+    position: absolute;
+  }
+  .app0-topnav0-absdiv {
+    //Colors, Fonts, Borders
+
+    //Display
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    //Diamensions
+    //Position
+    position: relative;
+    //Margin, Padding
+  }
+
+  .app0-topnav0-but0_0-absdiv {
+    //Colors, Fonts, Borders
+
+    //Display
+    //Diamensions
+    width: fit-content;
+    //Position
+    //Margin, Padding
+  }
+}

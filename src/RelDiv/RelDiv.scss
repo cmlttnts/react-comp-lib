@@ -1,1 +1,40 @@
 @use "./RelDivVars";
+
+.RelDiv {
+  //Colors, Fonts, Borders
+  color: inherit;
+  background-color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  //Display
+  display: none;
+  //Diamensions
+  width: 100%;
+  //Position
+  //Margin, Padding
+}
+
+//For click events, that trigger RelDivs to expand, use this class
+.ActiveRelDiv {
+  display: block;
+  position: relative;
+}
+
+@media only screen and (min-width: 600px) {
+  .app0-topnav0-reldiv {
+    //Colors, Fonts, Borders
+    //Display
+    display: block;
+    //Diamensions
+    //Position
+    //Margin, Padding
+  }
+
+  .app0-topnav0-but0_0-reldiv {
+    //Colors, Fonts, Borders
+    //Display
+    //Diamensions
+    //Position
+    //Margin, Padding
+  }
+}

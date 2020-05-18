@@ -13,7 +13,10 @@ class Nav extends Component {
     this.state = { expanded: false };
     this.classExt = "dropped ";
     this.uName = props.puName + (props.json.uName ? "-" + props.json.uName : "-nav");
-    console.log(props.puName);
+
+    //Make a unique key to store button + dropable divs id
+    //which then will help, which button should trigger which drop menu
+    this.uKey = props.json.uKey;
   }
   toggleView = () => {
     this.classExt = this.state.expanded ? "dropped" : "expanded";
@@ -23,13 +26,11 @@ class Nav extends Component {
     });
   };
   render() {
-    console.log(this.uName);
-
     return (
       <div className={"Nav " + this.uName}>
-        <BurgerButton puName={this.uName} />
-        <RelDiv puName={this.uName}>
-          <AbsDiv puName={this.uName}>
+        <BurgerButton puName={this.uName} uKey={this.uKey} />
+        <RelDiv puName={this.uName} uKey={this.uKey}>
+          <AbsDiv puName={this.uName} uKey={this.uKey}>
             {this.props.json.items.map((item, index) => {
               return <NavItem json={item} puName={this.uName} key={index} />;
             })}
@@ -41,17 +42,3 @@ class Nav extends Component {
 }
 
 export default Nav;
-
-// //COMPONENT
-// const Navigation = (props) => {
-//   return (
-//     <div className={"Navigation " + props.nav.uName}>
-//       <BurgerButton uName={props.nav.uName + "-burgerButton"} />
-//       <div className={"reldiv " + props.nav.uName + "-reldiv"}>
-//         <div className={"absdiv " + props.nav.uName + "-absdiv"}>
-//           {parseNavItems(props.nav.items, props.nav.uName)}
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };

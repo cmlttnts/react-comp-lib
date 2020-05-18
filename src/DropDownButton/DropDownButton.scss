@@ -1,1 +1,50 @@
-@use "./DropDownButtonVars";
+@use "./DropDownButtonVars" as ddb;
+
+.DropDownButton {
+  //Colors, Fonts, Borders
+  color: inherit;
+  background-color: inherit;
+  border: none;
+  font-size: inherit;
+  font-family: inherit;
+
+  //Display
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  //Diamensions
+  width: 100%;
+  //Position
+  //Margin, Padding
+  padding-top: 2px;
+  padding-bottom: 2px;
+  margin: 0;
+}
+
+.ArrowRelDiv {
+  //Colors, Fonts, Borders
+
+  //Display
+  position: relative;
+  //Diamensions
+  //Position
+  //Margin, Padding
+}
+
+.DropDownButton > div > img {
+  align-self: right;
+  position: absolute;
+  top: -6px;
+  left: 4px;
+}
+
+.DropDownButton:hover {
+  background-color: ddb.$bgc-hover;
+}
+
+//rotates when dropdown is active
+.ActiveDropDownArrow {
+  transform: rotate(180deg);
+  align-self: right;
+}

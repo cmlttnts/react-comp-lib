@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { connect } from "react-redux";
 
 import "./RelDiv.scss";
 
@@ -8,10 +9,18 @@ class RelDiv extends Component {
     super(props);
     this.state = {};
     this.uName = props.puName + "-reldiv";
+    this.divActiveClass = "";
   }
   render() {
-    return <div className={"RelDiv " + this.uName}>{this.props.children}</div>;
+    this.divActiveClass = this.props.globState[this.props.uKey] ? " ActiveRelDiv" : "";
+    return (
+      <div className={"RelDiv " + this.uName + this.divActiveClass}>{this.props.children}</div>
+    );
   }
 }
 
-export default RelDiv;
+const mapStateToProps = (state) => ({
+  globState: state,
+});
+
+export default connect(mapStateToProps)(RelDiv);

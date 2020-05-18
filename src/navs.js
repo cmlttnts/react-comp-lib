@@ -1,41 +1,44 @@
 const navs = [
   {
     uName: "topnav0",
+    uKey: "but0",
     items: [
       {
         type: "link",
         text: "Home",
-        link: "#home",
+        link: "javascript:void(0)",
       },
       {
         type: "link",
         text: "About",
-        link: "#about",
+        link: "javascript:void(0)",
       },
       {
         type: "link",
         text: "Contact",
-        link: "contact",
+        link: "javascript:void(0)",
       },
       {
-        uName: "drop0",
+        uName: "but0 1",
+        uKey: "but0_1",
         type: "drop",
-        text: "Drop",
+        text: "Contact",
         items: [
           {
             type: "link",
-            text: "drop1",
-            link: "#home",
+            text: "Drop 1",
+            link: "https://www.google.com.tr",
+          },
+
+          {
+            type: "link",
+            text: "Drop 2",
+            link: "javascript:void(0)",
           },
           {
             type: "link",
-            text: "drop2",
-            link: "#about",
-          },
-          {
-            type: "link",
-            text: "drop3",
-            link: "#contact",
+            text: "Drop 3",
+            link: "javascript:void(0)",
           },
         ],
       },
@@ -47,37 +50,37 @@ const navs = [
       {
         type: "link",
         text: "Home",
-        link: "#home",
+        link: "javascript:void(0)",
       },
       {
         type: "link",
         text: "About",
-        link: "#about",
+        link: "javascript:void(0)",
       },
       {
         type: "link",
         text: "Contact",
-        link: "contact",
+        link: "javascript:void(0)",
       },
       {
-        uName: "drop0",
+        uName: "but2",
         type: "drop",
         text: "Drop",
         items: [
           {
             type: "link",
             text: "Home",
-            link: "#home",
+            link: "javascript:void(0)",
           },
           {
             type: "link",
             text: "About",
-            link: "#about",
+            link: "javascript:void(0)",
           },
           {
             type: "link",
             text: "Contact",
-            link: "contact",
+            link: "javascript:void(0)",
           },
         ],
       },

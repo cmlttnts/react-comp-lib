@@ -9,7 +9,7 @@ class DropDownMenu extends Component {
   }
   render() {
     return (
-      <div className={"DropDownMenu " + this.uName}>
+      <div className={"DropDownMenu AbsDiv " + this.uName}>
         {this.props.items.map((item, index) => {
           return <NavItem json={item} puName={this.uName} key={index} />;
         })}
