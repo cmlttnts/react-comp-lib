@@ -7,7 +7,7 @@ class DummyComp extends Component {
   constructor(props) {
     super(props);
     this.state = {};
-    this.onClick = this.onClick.bind(this); //TODO: make this snippet
+    this.onClick = this.onClick.bind(this);
   }
   onClick() {}
   render() {

@@ -1,0 +1,65 @@
+@use "./SocialLinksVars";
+
+.SocialLinks {
+  //Colors, Fonts, Borders
+  background-color: inherit;
+  color: inherit;
+  border: 1px solid red;
+  //Display
+
+  //Diamensions
+  //Position
+  //Margin, Padding
+  margin: 0;
+  padding: 0;
+}
+
+.SocialLinks ul {
+  //Colors, Fonts, Borders
+  background-color: inherit;
+  color: inherit;
+  border: 1px solid green;
+
+  //Display
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+  //Diamensions
+  width: 100%;
+  //Position
+  //Margin, Padding
+  margin: 0;
+  padding: 0;
+}
+
+.SocialLinks a {
+  text-decoration: none;
+}
+
+.SocialLinks ul li {
+  //Colors, Fonts, Borders
+
+  //Display
+  text-align: center;
+  //Diamensions
+  //Position
+  //Margin, Padding
+  margin: 0;
+  padding: 0;
+}
+
+.app0-footer-socials {
+  //Colors, Fonts, Borders
+  font-size: 1.2rem;
+  //Display
+  //Diamensions
+  min-width: fit-content;
+  //Position
+  //Margin, Padding
+}
+
+.app0-footer-socials > ul {
+  flex-wrap: wrap;
+}
