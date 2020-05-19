@@ -2,8 +2,6 @@ import { BUTTONS_CANCEL, BUTTON_PRESS, BUTTON_ADD } from "../Actions/buttonActio
 import initState from "../initState";
 
 const Reducer = (state = initState, action) => {
-  console.log(state);
-
   switch (action.type) {
     case BUTTON_PRESS:
       state = {

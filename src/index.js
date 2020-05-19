@@ -13,5 +13,3 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById("root")
 );
-
-/* TODO: Change package names in json files */

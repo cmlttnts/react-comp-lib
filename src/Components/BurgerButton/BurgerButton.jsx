@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { addButton, pressButton } from "../Redux/Actions/buttonActions";
+import { addButton, pressButton } from "../../Redux/Actions/buttonActions";
 import "./BurgerButton.scss";
 
 class BurgerButton extends Component {

@@ -27,7 +27,7 @@ class Nav extends Component {
   };
   render() {
     return (
-      <div className={"Nav " + this.uName}>
+      <div className={"Nav " + this.uName + " " + this.props.extraClass}>
         <BurgerButton puName={this.uName} uKey={this.uKey} />
         <RelDiv puName={this.uName} uKey={this.uKey}>
           <AbsDiv puName={this.uName} uKey={this.uKey}>

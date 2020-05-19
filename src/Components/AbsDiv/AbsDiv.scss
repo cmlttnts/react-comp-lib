@@ -1,0 +1,116 @@
+@use "./AbsDivVars";
+
+/*
+when it is mobile it should expand like this
+    *Button* (most outher button)
+      LinKOuter
+      LinKOuter
+    *Button*(nested dropdown menu)
+      -LinKNested
+      -LinKNested
+      LinKOuter
+      .
+      .
+      .
+-------------------------------------------------------
+When it is large screen it should be like this
+-No outer button, top level navigation is open already
+
+LinkOuter LinkOuter LinkOuter Button(nested menu)
+                              -LinkNested
+                              -LinkNested
+                              -Button-> -LinkMostNested
+                                        - LinkMostNested
+                                        - LinkMostNested
+
+
+
+
+
+
+      */
+
+//Every absolute container should have this
+.AbsDiv {
+  //Colors, Fonts, Borders
+  background-color: inherit;
+  opacity: inherit;
+  //Display
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  //Diamensions
+  width: 100%;
+  //Position
+  position: relative; // the most outer navigation container should be absolute when on mobile to not push content
+  //Margin, Padding
+}
+
+//Top nav starts with flex-column
+.app0-topnav0-absdiv {
+  //Colors, Fonts, Borders
+  //Display
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  //Diamensions
+  //Position
+  position: absolute; // this div is the most outer container
+  //Margin, Padding
+}
+
+.app0-topnav0-but0_0-absdiv {
+  //Colors, Fonts, Borders
+
+  //Display
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  //Diamensions
+  //Position
+  //Margin, Padding
+}
+
+.ActiveAbsDiv {
+  //Colors, Fonts, Borders
+  //Display
+  //Diamensions
+  //Position
+  //Margin, Padding
+}
+
+@media only screen and (min-width: 600px) {
+  //When on large screen it is opposite, every nested menu should be absolute
+  //Only the most outer menu should be relative
+  .AbsDiv {
+    position: absolute;
+  }
+  //most outer menu should be row
+  .app0-topnav0-absdiv {
+    //Colors, Fonts, Borders
+
+    //Display
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    //Diamensions
+    //Position
+    position: relative;
+    //Margin, Padding
+  }
+  //nested menues should be column, already column from mobile design
+  //First level nested menues should drop below the button but after that
+  //deeper level menues should open to the side TODO
+  .app0-topnav0-but0_0-absdiv {
+    //Colors, Fonts, Borders
+
+    //Display
+    //Diamensions
+    width: fit-content;
+    //Position
+    //Margin, Padding
+  }
+}
