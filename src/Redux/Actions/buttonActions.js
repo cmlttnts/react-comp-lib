@@ -1,7 +1,7 @@
 //BUTTON ACTIONS
 export const BUTTON_PRESS = "BUTTON_PRESS";
 export const BUTTON_ADD = "BUTTON_ADD";
-
+export const BUTTON_REMOVE = "BUTTON_REMOVE";
 //Pressing outside of buttons will toggle them off
 export const BUTTONS_CANCEL = "BUTTONS_CANCEL";
 

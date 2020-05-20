@@ -23,12 +23,13 @@ const mapStateToProps = (state, props) => ({
   //use it in Component when state changes, it sends new props
 });
 
-const mapDispatchToProps = (dispatch, props) =>
-  bindActionCreators(
-    {
-      onClick: clickAction,
-    },
-    dispatch
-  );
+const mapDispatchToProps = {
+  actionCreator,
+  anotherActionCreator,
+  ....
+}
+
+//Object version for shorter code, usage "this.props.actionCreator()", dispatches
+
 //mergeProps not so useful at this stage
 export default connect(mapStateToProps, mapDispatchToProps)(DummyComp);

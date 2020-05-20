@@ -10,21 +10,13 @@ class Nav extends Component {
   //Constructor function, init the unique class name for css reasons
   constructor(props) {
     super(props);
-    this.state = { expanded: false };
-    this.classExt = "dropped ";
+    this.state = {};
     this.uName = props.puName + (props.json.uName ? "-" + props.json.uName : "-nav");
 
     //Make a unique key to store button + dropable divs id
     //which then will help, which button should trigger which drop menu
     this.uKey = props.json.uKey;
   }
-  toggleView = () => {
-    this.classExt = this.state.expanded ? "dropped" : "expanded";
-
-    this.useState({
-      expanded: !this.state.expanded,
-    });
-  };
   render() {
     return (
       <div className={"Nav " + this.uName + " " + this.props.extraClass}>

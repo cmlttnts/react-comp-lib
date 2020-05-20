@@ -1,4 +1,4 @@
-# Template project folder for React Projects
+# Template Components for React Projects
 
 ## Tools
 
